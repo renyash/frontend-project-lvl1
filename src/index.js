@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import readlineSync from 'readline-sync';
 
 const gameInit = (gameDesc, createRound) => {
