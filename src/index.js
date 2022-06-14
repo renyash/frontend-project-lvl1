@@ -9,13 +9,13 @@ const gameInit = (gameDesc, createRound) => {
   const roundCounter = 3;
 
   for (let currentRound = 1; currentRound <= roundCounter; currentRound += 1) {
-    const [questionNumber, correctAnswer] = createRound();
+    const [question, correctAnswer] = createRound();
 
-    console.log(`Question: ${questionNumber}`);
+    console.log(`Question: ${question}`);
 
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer === correctAnswer) {
+    if (answer === String(correctAnswer)) {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
