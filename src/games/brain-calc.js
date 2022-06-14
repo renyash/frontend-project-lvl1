@@ -23,9 +23,9 @@ const createRound = () => {
   const expression = expressions[getRandomNumber(0, expressions.length)];
 
   const correctAnswer = calculateExpression(firstNumber, secondNumber, expression);
-  const questionNumber = `${String(firstNumber)} ${expression} ${String(secondNumber)}`;
+  const question = `${firstNumber} ${expression} ${secondNumber}`;
 
-  return [questionNumber, String(correctAnswer)];
+  return [question, correctAnswer];
 };
 
 const gameStart = () => {
