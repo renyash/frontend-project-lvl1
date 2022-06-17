@@ -11,32 +11,34 @@
 2. Type "make install"
 3. Type "npm link"
 
-<h3> brain-even demo: </h3>
+To run the game, type its name in the console and press "Enter".
+
+<h3> Игра "brain-even" </h3>
 
 Guess if the number given is even or not.
 
 [![asciicast](https://asciinema.org/a/qgOBCb2QtTv3DdEyYUlxlGqn6.png)](https://asciinema.org/a/qgOBCb2QtTv3DdEyYUlxlGqn6)
 
-<h3> brain-calc demo: </h3>
+<h3> Игра "brain-calc" </h3>
 
 A test of your reflexes.
 Calculate the randomly generated expression.
 
 [![asciicast](https://asciinema.org/a/501387.svg)](https://asciinema.org/a/501387)
 
-<h3> brain-gcd demo: </h3>
+<h3> Игра "brain-gcd" </h3>
 
 Find the greatest common divisor!
 
 [![asciicast](https://asciinema.org/a/501686.svg)](https://asciinema.org/a/501686)
 
-<h3> brain-progression demo: </h3>
+<h3> Игра "brain-progression" </h3>
 
 Will you guess the missing number?
 
 [![asciicast](https://asciinema.org/a/501992.svg)](https://asciinema.org/a/501992)
 
-<h3> brain-prime demo: </h3>
+<h3> Игра "brain-prime" </h3>
 
 Guess if the number is prime or not.
 
