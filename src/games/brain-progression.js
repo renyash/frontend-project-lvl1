@@ -13,7 +13,7 @@ const createRound = () => {
   const indexToHide = getRandomNumber(0, progArray.length);
   const correctAnswer = progArray[indexToHide];
   progArray[indexToHide] = '..';
-  const question = progArray;
+  const question = progArray.join(' ');
   return [question, correctAnswer];
 };
 
