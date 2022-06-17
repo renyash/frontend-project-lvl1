@@ -3,6 +3,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/304fed2057f84ad77003/maintainability)](https://codeclimate.com/github/renyash/frontend-project-lvl1/maintainability)
 
+Made as educational project.
+
+<h3> How to install: </h3>
+
+1. Clone the repository
+2. Type "make install"
+3. Type "npm link"
+
 <b> brain-even demo: </b>
 
 [![asciicast](https://asciinema.org/a/qgOBCb2QtTv3DdEyYUlxlGqn6.png)](https://asciinema.org/a/qgOBCb2QtTv3DdEyYUlxlGqn6)
