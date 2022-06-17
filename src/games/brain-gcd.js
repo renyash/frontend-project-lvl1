@@ -14,7 +14,7 @@ const createRound = () => {
 
   const maxDivNumber = divNumbers.pop();
   const correctAnswer = maxDivNumber;
-  const question = `${firstNumber}  ${secondNumber}`;
+  const question = `${firstNumber} ${secondNumber}`;
 
   return [question, correctAnswer];
 };
