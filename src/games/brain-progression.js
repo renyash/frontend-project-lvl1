@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import gameInit from '../index.js';
+import initGame from '../index.js';
 
 const createRound = () => {
   const progFirstNumber = getRandomNumber(1, 11);
@@ -17,8 +17,8 @@ const createRound = () => {
   return [question, correctAnswer];
 };
 
-const gameStart = () => {
+const startGame = () => {
   const gameDesc = 'What number is missing in the progression?';
-  gameInit(gameDesc, createRound);
+  initGame(gameDesc, createRound);
 };
-export default gameStart;
+export default startGame;

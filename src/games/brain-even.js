@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import getRandomNumber from '../getRandomNumber.js';
-import gameInit from '../index.js';
+import initGame from '../index.js';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -10,8 +10,8 @@ const createRound = () => {
   return [questionNumber, correctAnswer];
 };
 
-const gameStart = () => {
+const startGame = () => {
   const gameDesc = 'Answer "yes" if the number is even, otherwise answer "no".';
-  gameInit(gameDesc, createRound);
+  initGame(gameDesc, createRound);
 };
-export default gameStart;
+export default startGame;

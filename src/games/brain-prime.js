@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import gameInit from '../index.js';
+import initGame from '../index.js';
 
 const isPrime = (number) => {
   let primeCounter = 0;
@@ -16,8 +16,8 @@ const createRound = () => {
   return [questionNumber, correctAnswer];
 };
 
-const gameStart = () => {
+const startGame = () => {
   const gameDesc = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-  gameInit(gameDesc, createRound);
+  initGame(gameDesc, createRound);
 };
-export default gameStart;
+export default startGame;

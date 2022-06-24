@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import gameInit from '../index.js';
+import initGame from '../index.js';
 
 const expressions = ['-', '+', '*'];
 
@@ -28,8 +28,8 @@ const createRound = () => {
   return [question, correctAnswer];
 };
 
-const gameStart = () => {
+const startGame = () => {
   const gameDesc = 'What is the result of the expression?';
-  gameInit(gameDesc, createRound);
+  initGame(gameDesc, createRound);
 };
-export default gameStart;
+export default startGame;
