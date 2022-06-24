@@ -12,8 +12,7 @@ const calculateExpression = (firstNumber, secondNumber, expression) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      console.log('error: unknown expression');
-      return 0;
+      throw new Error(`Unknown expression: ${expression}!`);
   }
 };
 
@@ -29,7 +28,7 @@ const createRound = () => {
 };
 
 const startGame = () => {
-  const gameDesc = 'What is the result of the expression?';
-  initGame(gameDesc, createRound);
+  const gameDescription = 'What is the result of the expression?';
+  initGame(gameDescription, createRound);
 };
 export default startGame;

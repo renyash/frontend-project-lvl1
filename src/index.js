@@ -20,9 +20,9 @@ const gameInit = (gameDesc, createRound) => {
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return;
     }
-    if (currentRound === 3) console.log(`Congratulations, ${name}!`);
+    if (currentRound === roundCounter) console.log(`Congratulations, ${name}!`);
   }
 };
 export default gameInit;

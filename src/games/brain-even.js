@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import getRandomNumber from '../getRandomNumber.js';
 import initGame from '../index.js';
 
@@ -11,7 +10,7 @@ const createRound = () => {
 };
 
 const startGame = () => {
-  const gameDesc = 'Answer "yes" if the number is even, otherwise answer "no".';
-  initGame(gameDesc, createRound);
+  const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+  initGame(gameDescription, createRound);
 };
 export default startGame;
