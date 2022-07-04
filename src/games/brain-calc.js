@@ -19,7 +19,7 @@ const calculateExpression = (firstNumber, secondNumber, expression) => {
 const createRound = () => {
   const firstNumber = getRandomNumber(0, 5);
   const secondNumber = getRandomNumber(0, 20);
-  const expression = expressions[getRandomNumber(0, expressions.length)];
+  const expression = expressions[getRandomNumber(0, expressions.length - 1)];
 
   const correctAnswer = calculateExpression(firstNumber, secondNumber, expression);
   const question = `${firstNumber} ${expression} ${secondNumber}`;
