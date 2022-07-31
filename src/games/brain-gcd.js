@@ -3,11 +3,12 @@ import initGame from '../index.js';
 
 const calculateMaxDivNumber = (firstNumber, secondNumber) => {
   let maxDivNumber = 0;
-  for (let gcd = 1; gcd <= firstNumber; gcd += 1) {
+  for (let gcd = 1; gcd <= Math.min(firstNumber, secondNumber); gcd += 1) {
     if ((firstNumber % gcd === 0) && (secondNumber % gcd === 0)) {
       maxDivNumber = gcd;
     }
   }
+
   return maxDivNumber;
 };
 

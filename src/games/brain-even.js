@@ -6,6 +6,7 @@ const isEven = (number) => number % 2 === 0;
 const createRound = () => {
   const questionNumber = getRandomNumber(1, 101);
   const correctAnswer = isEven(questionNumber) ? 'yes' : 'no';
+
   return [questionNumber, correctAnswer];
 };
 

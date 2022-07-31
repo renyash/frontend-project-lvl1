@@ -15,14 +15,14 @@ const gameInit = (gameDesc, createRound) => {
 
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer === String(correctAnswer)) {
-      console.log('Correct!');
-    } else {
+    if (answer !== String(correctAnswer)) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
+
       return;
     }
-    if (currentRound === roundCounter) console.log(`Congratulations, ${name}!`);
+    console.log('Correct!');
   }
+  console.log(`Congratulations, ${name}!`);
 };
 export default gameInit;
