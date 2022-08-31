@@ -1,12 +1,9 @@
 import getRandomNumber from '../getRandomNumber.js';
 import initGame from '../index.js';
 
-const createProgression = () => {
-  const progFirstNumber = getRandomNumber(1, 11);
-  const progInterval = getRandomNumber(1, 11);
+const createProgression = (progFirstNumber, progInterval, progLength) => {
   const progArray = [progFirstNumber];
-
-  for (let i = 0; i < getRandomNumber(5, 10); i += 1) {
+  for (let i = 0; i < progLength; i += 1) {
     progArray.push(progArray[i] + progInterval);
   }
 
@@ -14,7 +11,11 @@ const createProgression = () => {
 };
 
 const createRound = () => {
-  const progression = createProgression();
+  const progFirstNumber = getRandomNumber(1, 11);
+  const progInterval = getRandomNumber(1, 11);
+  const progLength = getRandomNumber(5, 11);
+
+  const progression = createProgression(progFirstNumber, progLength, progInterval);
 
   const indexToHide = getRandomNumber(0, progression.length - 1);
   const correctAnswer = progression[indexToHide];
