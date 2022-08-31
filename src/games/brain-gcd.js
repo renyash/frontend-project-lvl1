@@ -2,14 +2,10 @@ import getRandomNumber from '../getRandomNumber.js';
 import initGame from '../index.js';
 
 const calculateMaxDivNumber = (firstNumber, secondNumber) => {
-  let maxDivNumber = 0;
-  for (let gcd = 1; gcd <= Math.min(firstNumber, secondNumber); gcd += 1) {
-    if ((firstNumber % gcd === 0) && (secondNumber % gcd === 0)) {
-      maxDivNumber = gcd;
-    }
+  if (secondNumber === 0) {
+    return firstNumber;
   }
-
-  return maxDivNumber;
+  return calculateMaxDivNumber(secondNumber, (firstNumber % secondNumber));
 };
 
 const createRound = () => {

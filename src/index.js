@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-const gameInit = (gameDesc, createRound) => {
+const gameInit = (gameDescription, createRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(gameDesc);
+  console.log(gameDescription);
 
   const roundCounter = 3;
 
