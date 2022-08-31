@@ -1,7 +1,7 @@
 import getRandomNumber from '../getRandomNumber.js';
 import initGame from '../index.js';
 
-const createProgression = (progFirstNumber, progInterval, progLength) => {
+const createProgression = (progFirstNumber, progLength, progInterval) => {
   const progArray = [progFirstNumber];
   for (let i = 0; i < progLength; i += 1) {
     progArray.push(progArray[i] + progInterval);
